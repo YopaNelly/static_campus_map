@@ -1,0 +1,32 @@
+/* Add CSS styles for your campus map visualization */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light background color */
+}
+
+#map {
+  width: 800px;
+  height: 600px;
+  border: 1px solid #ccc;
+  position: relative;
+  background-color: #ffffff; /* White background for the map */
+}
+
+.building {
+  position: absolute;
+  background-color: #8a2be2; /* Violet color */
+  color: #fff; /* White text color */
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.building:hover {
+  background-color: #008000; /* Green color on hover */
+}
+
+.hidden {
+  display: none;
+}
