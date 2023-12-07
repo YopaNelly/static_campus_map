@@ -17,8 +17,11 @@ The Static Campus Map project aims to create a visual representation of a campus
 
 ## Installation
 Clone the repository: git clone `https://github.com/YopaNelly/static_campus_map`
+
 Open the project directory in your preferred code editor.
-Explore the files: `index.html, script.js, styles.css.`
+
+Explore the files: `index.html, main.js, styles.css.`
+
 Modify the dataset or map features as needed.
 
 
