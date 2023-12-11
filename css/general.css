@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-size: 18px;
+}
+
+section{
+    max-width: 2000px;
+    margin: auto;
+}
+
+p{
+    margin: 0;
+}
+
+@media (max-width: 500px) {
+    .left-section{
+        display: none;
+    }
+    .nav-bar{
+        display: block;
+        max-width: 300px;
+        margin: auto;
+    }
+    section{
+        max-width: 400px;
+        margin: auto;
+    }
+    svg{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 700px) {
+    svg{
+        height: 100vh;
+    }
+}
