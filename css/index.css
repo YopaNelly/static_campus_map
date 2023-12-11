@@ -1,0 +1,15 @@
+#cameroon-map{
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+}
+
+path{
+    fill: #cccccc;
+    stroke: #000000;
+    stroke-width: 1px;
+}
+
+#cameroon-map path:hover{
+    fill: #dddddd;
+}

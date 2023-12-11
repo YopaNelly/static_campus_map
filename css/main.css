@@ -1,0 +1,62 @@
+.map-card{
+    display: none;
+    position: fixed;
+    width: 400px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 5px gray;
+    border-radius: 10px;
+    background-color: white;
+    top: 110px;
+    left: 20px;
+    bottom: 20px;
+    font-size: 24px;
+}
+
+.location-img-container{
+    position: relative;
+}
+.location-img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: contain;
+}
+
+.location-info p span{
+    color: rgb(99, 99, 199);
+}
+
+.location-info{
+    padding: 10px;
+}
+
+.delete-icon-btn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 4px;
+    top: 4px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+}
+.delete-icon{
+    width: 65%;
+}
+.map-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+svg path{
+    cursor: pointer;
+    
+}
+
+path:hover{
+    fill: black;
+}
+
