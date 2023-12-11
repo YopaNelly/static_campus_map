@@ -75,7 +75,8 @@ header{
 .left-section{
     display: flex;
     align-items: center;
-    width: 80px;
+    justify-content: space-between;
+    width: 90px;
     background-color: white;
     border: 1px solid transparent;
     border-radius: 5px;
