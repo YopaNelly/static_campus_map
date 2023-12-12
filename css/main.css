@@ -7,7 +7,7 @@
     background-color: gainsboro;
     top: 110px;
     left: 20px;
-    bottom: 20px;
+    bottom: 70px;
     font-size: 28px;
     overflow-y: scroll;
 }
@@ -17,6 +17,7 @@
 }
 .location-img{
     width: 100%;
+    height: 80%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     object-fit: contain;
@@ -25,7 +26,7 @@
 
 .location-info p{
     margin-left: 10px;
-    line-height: 20px;
+    line-height: 30px;
 }
 
 .location-info p .tel{
@@ -59,9 +60,8 @@
 figure .location-info div{
     display: flex;
     align-items: center;
-    margin: 10px;
-    height: 80px;
-    padding: 10px;
+    height: fit-content;;
+    padding: 24px 5px;
 }
 
 .location-info img{
@@ -71,3 +71,4 @@ figure .location-info div{
 .location-info div:hover{
     background-color: rgb(156, 156, 156);
 }
+
