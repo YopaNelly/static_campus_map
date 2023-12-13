@@ -24,13 +24,28 @@ function getInputValue(){
 
 
 
-function displaybuildingCard(buildingName){
+function displaybuildingCard(buildingName) {
   buildingDetails.forEach((building) => {
-    if(buildingName.toLowerCase() === building.name.toLocaleLowerCase() || buildingName.toLowerCase() === building.id){
-      const htmlCode = `<div class="building-card js-building-card">
+    if (
+      buildingName.toLowerCase() === building.name.toLowerCase() ||
+      buildingName.toLowerCase() === building.id
+    ) {
+      const buildingCard = document.createElement("div");
+      buildingCard.classList.add("building-card", "js-building-card");
+
+      const closeButton = document.createElement("button");
+      closeButton.classList.add("close-button", "js-close-button");
+      closeButton.innerHTML = "&times;";
+
+      closeButton.addEventListener("click", () => {
+        buildingCard.remove();
+      });
+
+      const buildingContent = document.createElement("div");
+      buildingContent.innerHTML = `
         <div>
           <div class="img-container">
-            <img class="building-img" src="./images/pics/${building.image}" alt="${building['image-alt']}">
+            <img class="building-img" src="./images/pics/${building.image}" alt="${building["image-alt"]}">
           </div>
           <div class="building-info">
             <div>
@@ -53,18 +68,23 @@ function displaybuildingCard(buildingName){
               <img src="../images/icons/website_64px.png" alt="">
               <p class="building-site"><a href="https://www.${building.website}">${building.website}</a></p>
             </div>
-         </div>  
+          </div>  
         </div>
-        </div>`;
-        document.querySelector('.js-map-container').innerHTML = htmlCode;
-        if(building.tel === ''){
-          document.querySelector('.tel-container').remove();
-        }
-        else if(building.website === ''){
-          document.querySelector('.website-container').remove();
-        }
+      `;
+
+      buildingCard.appendChild(closeButton);
+      buildingCard.appendChild(buildingContent);
+
+      document.querySelector(".js-map-container").innerHTML = "";
+      document.querySelector(".js-map-container").appendChild(buildingCard);
+
+      if (building.tel === "") {
+        document.querySelector(".tel-container").remove();
+      } else if (building.website === "") {
+        document.querySelector(".website-container").remove();
+      }
     }
-});
+  });
 }
 
 const inputButton = document.querySelector('.js-search-bar');
