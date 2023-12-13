@@ -1,4 +1,4 @@
-export const locationDetails = [
+export const buildingDetails = [
     {
         name: "Nahpi",
         image: "4756.jpg",

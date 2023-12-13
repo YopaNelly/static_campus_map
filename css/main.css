@@ -1,4 +1,4 @@
-.location-card{
+.building-card{
     position: fixed;
     width: 600px;
     border: 1px solid transparent;
@@ -15,7 +15,7 @@
 .img-container{
     position: relative;
 }
-.location-img{
+.building-img{
     width: 100%;
     height: 80%;
     border-top-right-radius: 10px;
@@ -24,12 +24,12 @@
     margin-bottom: 0;
 }
 
-.location-info p{
+.building-info p{
     margin-left: 10px;
     line-height: 30px;
 }
 
-.location-info p .tel{
+.building-info p .tel{
     text-decoration: none;
     color: black;
 }
@@ -57,18 +57,18 @@
     align-items: center;
 }
 
-figure .location-info div{
+figure .building-info div{
     display: flex;
     align-items: center;
     height: fit-content;;
     padding: 24px 5px;
 }
 
-.location-info img{
+.building-info img{
    width: 40px;
 }
 
-.location-info div:hover{
+.building-info div:hover{
     background-color: rgb(156, 156, 156);
 }
 
