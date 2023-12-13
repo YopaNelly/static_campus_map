@@ -8,7 +8,8 @@
 
 .nav-bar {
     display: flex;
-    max-width: 1500px;
+    width: 100%;
+    max-width: 100%;
     margin: auto;
     padding: 20px;
 }
@@ -18,8 +19,16 @@
     position: relative;
 }
 
+@media (max-width: 767px) {
+    .search-bar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 #search-bar {
     flex: 1;
+    width: 100%;
     height: 50px;
     border: 1px solid transparent;
     border-radius: 30px;
@@ -27,7 +36,6 @@
     padding-right: 55px;
     box-shadow: 1px 1px 3px darkgray;
     font-size: 18px;
-    min-width: 0px;
 }
 
 #search-bar:focus {
@@ -75,4 +83,3 @@
     transition: opacity 0.5s;
     pointer-events: none;
 }
-
