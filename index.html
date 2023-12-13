@@ -10,22 +10,24 @@
 </head>
    <body>
 
-      <header>
-         <section>
-           <nav class="nav-bar" aria-label="header">
-            <div class="search-bar-container">
-              <input type="text" name="search-bar" id="search-bar" class="js-search-bar">
-              <div class="tooltip">Search location</div>
-              <button id="search-btn" class="js-search-btn">
-                 <img class="search-icon" src="./images/icons/search_50px.png" alt="search-icon">
-              </button>
-              <button onclick="const buildingCard = document.querySelector('.js-building-card');
-            buildingCard.remove();" class="delete-icon-btn js-delete-icon-btn"><img src="/images/icons/delete.svg" class="delete-icon"></button>
-            </div>
-           </div>
-           </nav>  
-        </section>    
-    </header>
+ <header class="" style="background-color: purple; padding-top: 0; margin-top: 0;">
+  <section>
+    <nav class="nav-bar" aria-label="header" style="display: flex; justify-content: space-between; align-items: center;">
+      <div>
+        <h1 class="app-name" style="color: white; margin-right: auto;">FindHall-UBa</h1>
+      </div>
+      <div class="search-bar-container">
+        <input type="text" name="search-bar" id="search-bar" class="js-search-bar" style="flex: 1;">
+        <div class="tooltip">Search location</div>
+        <button id="search-btn" class="js-search-btn">
+          <img class="search-icon" src="./images/icons/search_50px.png" alt="search-icon">
+        </button>
+        
+      </div>
+    </nav>
+  </section>
+  
+</header>
 
     <main>  
       <section class="map-container js-map-container"> 
@@ -597,8 +599,13 @@
          <path style="cursor:pointer;fill-rule:evenodd;fill:rgb(85.098039%,81.568627%,78.823529%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(72.54902%,66.27451%,61.176471%);stroke-opacity:1;stroke-miterlimit:4;" d="M -22.253906 358.28125 L 3.246094 364.855469 L 6.863281 350.84375 L -18.636719 344.269531 Z M -22.253906 358.28125 "/>
          <path style="cursor:pointer;fill-rule:evenodd;fill:rgb(85.098039%,81.568627%,78.823529%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(72.54902%,66.27451%,61.176471%);stroke-opacity:1;stroke-miterlimit:4;" d="M -25.3125 485.386719 L -1.1875 493.800781 L 3.722656 479.75 L -20.40625 471.335938 Z M -25.3125 485.386719 "/>
          <path style="cursor:pointer;fill-rule:evenodd;fill:rgb(85.098039%,81.568627%,78.823529%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(72.54902%,66.27451%,61.176471%);stroke-opacity:1;stroke-miterlimit:4;" d="M 1041.710938 1155.730469 L 1069.996094 1159.226562 L 1071.605469 1146.175781 L 1043.300781 1142.679688 Z M 1041.710938 1155.730469 "/>
-         <path style="cursor:pointer;fill-rule:evenodd;fill:rgb(85.098039%,81.568627%,78.823529%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(72.54902%,66.27451%,61.176471%);stroke-opacity:1;stroke-miterlimit:4;" d="M 1061.785156 835.226562 L 1073.550781 845.21875 L 1088.957031 827.09375 L 1077.191406 817.101562 Z M 1061.785156 835.226562 "/>
-         <path style="cursor:pointer;fill-rule:evenodd;fill:rgb(85.098039%,81.568627%,78.823529%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(72.54902%,66.27451%,61.176471%);stroke-opacity:1;stroke-miterlimit:4;" d="M 381.136719 336.175781 L 381.375 357.320312 L 398.328125 357.140625 L 398.089844 335.996094 Z M 381.136719 336.175781 "/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1500">
+  <path style="cursor:pointer;fill-rule:evenodd;fill:rgb(85.098039%,81.568627%,78.823529%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(72.54902%,66.27451%,61.176471%);stroke-opacity:1;stroke-miterlimit:4;" d="M 1061.785156 835.226562 L 1073.550781 845.21875 L 1088.957031 827.09375 L 1077.191406 817.101562 Z M 1061.785156 835.226562 "/>
+  <text x="1061" y="850" fill="black" font-family="Arial" font-size="16">
+    Your text here
+  </text>
+</svg>         
+<path style="cursor:pointer;fill-rule:evenodd;fill:rgb(85.098039%,81.568627%,78.823529%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(72.54902%,66.27451%,61.176471%);stroke-opacity:1;stroke-miterlimit:4;" d="M 381.136719 336.175781 L 381.375 357.320312 L 398.328125 357.140625 L 398.089844 335.996094 Z M 381.136719 336.175781 "/>
          <path style="cursor:pointer;fill-rule:evenodd;fill:rgb(85.098039%,81.568627%,78.823529%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(72.54902%,66.27451%,61.176471%);stroke-opacity:1;stroke-miterlimit:4;" d="M 125.996094 58.597656 L 141.875 72.828125 L 148.59375 65.316406 L 141.042969 58.539062 L 147.839844 50.945312 L 139.511719 43.492188 Z M 125.996094 58.597656 "/>
          <path style="cursor:pointer;fill-rule:evenodd;fill:rgb(85.098039%,81.568627%,78.823529%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(72.54902%,66.27451%,61.176471%);stroke-opacity:1;stroke-miterlimit:4;" d="M 851.386719 355.78125 L 872.929688 370.890625 L 880.066406 360.71875 L 858.542969 345.589844 Z M 851.386719 355.78125 "/>
          <path style="cursor:pointer;fill-rule:evenodd;fill:rgb(85.098039%,81.568627%,78.823529%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(72.54902%,66.27451%,61.176471%);stroke-opacity:1;stroke-miterlimit:4;" d="M 828.25 599.621094 L 836.140625 605.976562 L 856.214844 581.136719 L 848.324219 574.761719 Z M 828.25 599.621094 "/>
@@ -2055,8 +2062,14 @@
          <path style="cursor:pointer;fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(100%,100%,100%);stroke-opacity:0.6;stroke-miterlimit:10;" d="M 1219.425781 964.390625 C 1218.902344 964.390625 1218.441406 964.285156 1218.035156 964.078125 C 1217.628906 963.859375 1217.308594 963.527344 1217.082031 963.078125 C 1216.851562 962.632812 1216.738281 962.058594 1216.738281 961.359375 C 1216.738281 960.640625 1216.855469 960.054688 1217.097656 959.59375 C 1217.335938 959.136719 1217.664062 958.804688 1218.082031 958.59375 C 1218.496094 958.386719 1218.964844 958.28125 1219.488281 958.28125 C 1219.789062 958.28125 1220.082031 958.3125 1220.363281 958.375 C 1220.644531 958.4375 1220.871094 958.511719 1221.050781 958.59375 L 1220.753906 959.390625 C 1220.574219 959.328125 1220.367188 959.273438 1220.128906 959.21875 C 1219.898438 959.15625 1219.679688 959.125 1219.472656 959.125 C 1218.316406 959.125 1217.738281 959.871094 1217.738281 961.359375 C 1217.738281 962.070312 1217.878906 962.617188 1218.160156 963 C 1218.441406 963.375 1218.855469 963.5625 1219.410156 963.5625 C 1219.730469 963.5625 1220.019531 963.53125 1220.269531 963.46875 C 1220.519531 963.398438 1220.742188 963.3125 1220.941406 963.21875 L 1220.941406 964.078125 C 1220.742188 964.171875 1220.523438 964.246094 1220.285156 964.296875 C 1220.054688 964.359375 1219.769531 964.390625 1219.425781 964.390625 Z M 1219.425781 964.390625 "/>
          <path style="cursor:pointer;fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(100%,100%,100%);stroke-opacity:0.6;stroke-miterlimit:10;" d="M 1223.300781 960.28125 C 1223.300781 960.40625 1223.292969 960.5625 1223.285156 960.75 C 1223.273438 960.9375 1223.261719 961.105469 1223.253906 961.25 L 1223.300781 961.25 C 1223.339844 961.1875 1223.402344 961.105469 1223.488281 961 C 1223.582031 960.886719 1223.675781 960.773438 1223.769531 960.65625 C 1223.863281 960.542969 1223.941406 960.449219 1224.003906 960.375 L 1225.894531 958.390625 L 1227.019531 958.390625 L 1224.628906 960.90625 L 1227.191406 964.28125 L 1226.019531 964.28125 L 1223.972656 961.53125 L 1223.300781 962.109375 L 1223.300781 964.28125 L 1222.347656 964.28125 L 1222.347656 955.921875 L 1223.300781 955.921875 Z M 1223.300781 960.28125 "/>
       
-          <path id="school-field" class="building" style="fill-rule:evenodd;fill:rgb(53.333333%,87.843137%,74.509804%);fill-opacity:1;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(26.666667%,74.509804%,56.078431%);stroke-opacity:1;stroke-miterlimit:4;" d="M 942.019531 756.765625 L 1043.042969 841.921875 L 1166.789062 695.113281 L 1065.78125 609.972656 Z M 942.019531 756.765625 "/>
-  
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="">
+  <g>
+    <path id="school-field" class="building" style="fill-rule:evenodd;fill:rgb(53.333333%,87.843137%,74.509804%);fill-opacity:1;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(26.666667%,74.509804%,56.078431%);stroke-opacity:1;stroke-miterlimit:4;" d="M 942.019531 756.765625 L 1043.042969 841.921875 L 1166.789062 695.113281 L 1065.78125 609.972656 Z M 942.019531 756.765625 "/>
+    <text x="1000" y="780" fill="black" font-family="Arial" font-size="16">
+      Pitch
+    </text>
+  </g>
+</svg>  
          </svg>
       
 
@@ -2064,6 +2077,8 @@
     </main>
 
     <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/sidebar.js"></script>
+
    </body>
 </html>
     
