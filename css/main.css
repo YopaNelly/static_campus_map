@@ -4,10 +4,10 @@
     border: 1px solid transparent;
     box-shadow: 0px 0px 5px gray;
     border-radius: 10px;
-    background-color: gainsboro;
-    top: 110px;
+    background-color: rgb(254, 244, 228);
+    top: 10px;
     left: 20px;
-    bottom: 70px;
+    bottom: 10px;
     font-size: 28px;
     overflow-y: scroll;
 }
@@ -34,34 +34,16 @@
     color: black;
 }
 
-
-.delete-icon-btn{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 4px;
-    top: 4px;
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: white;
-    cursor: pointer;
-}
-.delete-icon{
-    width: 65%;
-}
 .map-wrapper{
     display: flex;
     align-items: center;
 }
 
-figure .building-info div{
+.building-info div{
     display: flex;
     align-items: center;
     height: fit-content;;
-    padding: 24px 5px;
+    padding: 10px 5px;
 }
 
 .building-info img{
@@ -71,4 +53,10 @@ figure .building-info div{
 .building-info div:hover{
     background-color: rgb(156, 156, 156);
 }
+
+#school-field:hover{
+    cursor: pointer;
+}
+
+
 

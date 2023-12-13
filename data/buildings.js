@@ -28,5 +28,15 @@ export const buildingDetails = [
         website: "coltech.uniba.cm",
         id: "coltech",
         'image-alt':"coltech office"
+    },
+    {
+        name: "field",
+        image: "COLTECH.jpg",
+        tel: "",
+        desc:"College of Technology is school under the university of Bamenda based on agriculture, business, entrepreneurship, technology and engineering",
+        direction: "North",
+        website: "coltech.uniba.cm",
+        id: "school-field",
+        'image-alt':"coltech office"
     }
 ];
