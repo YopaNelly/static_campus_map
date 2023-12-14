@@ -58,11 +58,11 @@ export const buildingDetails = [
   {
     name: "PBA",
     image: "pbb.jpg",
-    tel: "695103082",
+    tel: "",
     desc: "School Of Engineering",
     direction:
       "From the Schools second gate, walk 30m, branch left on the first entrance and walk 45m down. Once you meet a toilet at the center of the road, move 10m down to the building on the right.",
-    website: "nahpi.cm",
+    website: "",
     id: "pba",
     "image-alt": "nahpi-image",
   },
@@ -75,7 +75,7 @@ export const buildingDetails = [
     direction:
       "From ENS street towards the main gate, branch left and walk about 300m to find a stone schoo-like block. ",
     website: "",
-    id: "coltech-building",
+    id: "coltech",
     "image-alt": "coltech office",
   },
   {
@@ -124,7 +124,7 @@ export const buildingDetails = [
   },
   {
     name: "Amphi650",
-    image: "amphi650.PNG",
+    image: "amphi6500.PNG",
     tel: "",
     desc: "Large amphi building painted yellow and stands isolated",
     direction:
@@ -135,7 +135,7 @@ export const buildingDetails = [
   },
   {
     name: "Asanji Hall",
-    image: "COLTECH.jpg",
+    image: "amphi6500.PNG",
     tel: "",
     desc: "Large amphi building painted yellow",
     direction:
@@ -159,7 +159,7 @@ export const buildingDetails = [
     name: "Girls Hostel",
     image: "hostel.jpg",
     tel: "",
-    desc: "School Of Engineering",
+    desc: "Hostel",
     direction:
       "From the Schools second gate, walk 30m, branch left on the second entrance and walk 35m down",
     website: "",
@@ -181,7 +181,7 @@ export const buildingDetails = [
     name: "HTTC Workshop",
     image: "htttc.jpg",
     tel: "",
-    desc: "School Of Engineering",
+    desc: "Workshop",
     direction:
       "From the second gate, walk straight and branch on the first entrance you see, Walk 20m down, Branch right and walk 20m right to see the image displayed above",
     website: "",
@@ -190,8 +190,8 @@ export const buildingDetails = [
   },
   {
     name: "Faculty of Science",
-    image: "4756.jpg",
-    tel: "695103082",
+    image: "fs.PNG",
+    tel: "",
     desc: "Building",
     direction:
       "From the Campus third gate, walk downward for about 120m, the  largest building standing in isolation is amphi650, GO to the building next to it ",
@@ -202,7 +202,7 @@ export const buildingDetails = [
   {
     name: "CCAST FIELD",
     image: "Ccasts.PNG",
-    tel: "695103082",
+    tel: "",
     desc: "Field",
     direction:
       "From ENS street towards the main gate, branch left and walk about 300m to find a large sports complex ",
@@ -211,14 +211,14 @@ export const buildingDetails = [
     "image-alt": "field-image",
   },
   {
-    name: "School FIELD",
-    image: "4756.jpg",
-    tel: "695103082",
-    desc: "School Of Engineering",
+    name: "School Field",
+    image: "school-field.jpg",
+    tel: "",
+    desc: "A field without grass",
     direction:
       "From the Schools second gate, walk 30m, branch left on the first entrance and walk 45m down. Once you meet a toilet at the center of the road, move 10m down to the building on the right.",
-    website: "nahpi.cm",
+    website: "",
     id: "school-field",
-    "image-alt": "nahpi-image",
+    "image-alt": "field-image",
   },
 ];

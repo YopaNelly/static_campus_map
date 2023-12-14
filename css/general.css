@@ -28,6 +28,9 @@ p{
         max-width: 400px;
         margin: auto;
     }
+    .logo{
+        display: none;
+    }
     section{
         max-width: 400px;
         margin: auto;
