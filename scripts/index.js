@@ -2,8 +2,6 @@ import { buildingDetails } from "../data/buildings.js";
 
 const searchBtn = document.querySelector('.js-search-btn');
 
-const myPath = document.getElementById('school-field');
-
 function getInputValue(){
   const inputButtonValue = document.querySelector('.js-search-bar').value;
   return inputButtonValue;
@@ -14,23 +12,13 @@ function getInputValue(){
     displaybuildingCard(buildingName);
   });
   
-
-
-  myPath.addEventListener('click', ()=>{
-    const elementId = myPath.id
-    displaybuildingCard(elementId);
-    console.log('hello');
-  })
-
-
-
 function displaybuildingCard(buildingName){
   buildingDetails.forEach((building) => {
     if(buildingName.toLowerCase() === building.name.toLocaleLowerCase() || buildingName.toLowerCase() === building.id){
       const htmlCode = `<div class="building-card js-building-card">
         <div>
           <div class="img-container">
-            <img class="building-img" src="./images/pics/${building.image}" alt="${building['image-alt']}">
+            <img class="building-img" src="../images/pics/${building.image}" alt="${building['image-alt']}">
           </div>
           <div class="building-info">
             <div>
@@ -60,7 +48,7 @@ function displaybuildingCard(buildingName){
         if(building.tel === ''){
           document.querySelector('.tel-container').remove();
         }
-        else if(building.website === ''){
+        if(building.website === ''){
           document.querySelector('.website-container').remove();
         }
     }
@@ -74,6 +62,21 @@ inputButton.addEventListener('keydown', (event)=>{
     displaybuildingCard(buildingName);
   }
 });
+
+document.querySelectorAll('.building').forEach((building) =>{
+  const buildingId = building.id;
+  building.addEventListener('click', ()=>{
+    displaybuildingCard(buildingId);
+    console.log('hello')
+  });
+});
+
+document.querySelector('.js-delete-icon-btn').addEventListener('click', ()=> {
+  const buildingCard = document.querySelector('.js-building-card');
+  buildingCard.remove();
+});
+
+
 
 
 
